@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>neu</title>
+    <title>HTML Grundlagen Kurs</title>
 </head>
 <body>
-    <h1>Das ist eine Überschrift</h1>
+    <h1>HTML Grundlagen Kurs</h1>
+    <br>
+    <p>
+        <h3>Forms and Button</h3>
+        <form action="filler">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <label for="color">pick a color</label>
+            <input type="color" id="color" name="colorpicker">
+            <br>
+            <br>
+            <label for="number">pick a number</label>
+            <input type="number" id="number" name="number" required>
+            <br>
+            <br>
+            <button>A typical Submit Button, sends a Form!</button>
+            <br>
+            <br>
+            <button type="button">just a button, not a submit button, wont send a Form!</button>
+            <br>
+        </form>
+        <br>
+        <button>A Botton, outside of the Form, even its an Submitt Button, it cant send anything because its not in the Form!</button>
+    </p>
+    <hr>
+    <p>Eine Form kann man sich wie einen Rahmen vorstellen und alles was in diesem Rahmen enthakten ist, ob es Texte, Buttons usw sind, wird zusammen an die 
+        in dem Form eingebetteten Link gesendet.
+    </p>
+    <p>Mit dem ein Input hat auch einen Type. In den Type lässt sich die Art des Inputs definieren. Von Text, password, color usw.</p>
+    <p>Mit dem Label, lassen sich Inputs beschriften. Sie müssen mit deren ID verknüpft werden. Steht das Label über dem Input, steht die beschreibung vor dem Text</p>
+    <hr>
+    <p>
+        <h3>Hijacking Searchers</h3>
+        <form action="https://www.google.de/search">
+            <h4>Google Suche</h4>
+            <label for="googlesuche">Suchen</label>
+            <input type="text" id="googlesuche" name="q">
+        </form>
+        <form action="https://www.youtube.com/results">
+            <br>
+            <h4>youtube suche</h4>
+            <label for="youtubesuche">Suchen</label>
+            <input type="text" id="youtubesuche" name="search_query">
+        </form>
+    </p>
+    <hr>
+    <p>In die Form action= gibt man einen Link an, an den man möchte das die inhalte des Forms gesehndet werden.</p>
+    <p>Hier habe ich diverse Suchmaschienen verwendet. Im input namen gilt es den Such-schlüssel anzugeben.</p>
+    <p>Nun wird der eingegebene Text im Textfeld an die jeweilige Suchmaschiene  weiter geleitet.</p>
+    <hr>
+    <br
+
     
 </body>
 </html>
